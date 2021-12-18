@@ -1,0 +1,287 @@
+:root{
+    --lightblue : #b1cee2;
+    --blue:#202094;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a:link, a:visited,  a:hover, a:active
+{
+    color: inherit;
+    text-decoration: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    position: fixed;
+    background-color: white;
+    width:100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.intro-row{
+    background-color: #b1cee2;
+}
+
+.intro{
+    background-color: var(--lightblue);
+    color: var(--blue);
+    font-family:monospace;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.my-img{
+    height:70vh;
+}
+
+.social-button{
+    font-size: 3rem;
+}
+
+.pragatiImg{
+    background-color: var(--blue);
+    height: 50vh;
+    background-image: url("https://autonomouscolleges.com/wp-content/uploads/2020/10/PRAGATI-ENGINEERING-COLLEGE-%E2%80%93-Approved-by-aicte-Permanently-affliated-to-JNTU-Kakinada-Accredited-by-NBA-and-NAAC-with-%E2%80%98A-Grade-500x326.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.adityaImg{
+    background-color: var(--blue);
+    height: 50vh;
+    background-image: url("https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_360,q_100,w_1140/v1/gcs/platform-data-dsc/chapter_banners/aditya.jpeg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.pratyushaImg{
+    background-color: var(--blue);
+    height: 50vh;
+    background-image: url("https://lh3.googleusercontent.com/3_7IlBywRCg19QxdGycUsaJ_4PBUjnmlVMCmiQxa8ayNdD4TNniOums2u8XpTv_1A5oTudL0=w1080-h608-p-no-v0");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.pragatiInfo, .adityaInfo, .pratyushaInfo{
+    background-color: white;
+    color:black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom:3px solid #202094;
+}
+.pragati-button, .aditya-button, .pra-button{
+    color:white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 3px;
+
+}
+.skills{
+    background-color: black;
+    color:white;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.con{
+    width: 80%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hackerRankIcon{
+    color: #1BA94C;
+    font-size:10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hackerRankInfo{
+    color: #1BA94C;
+    font-size:2rem;
+    font-family: monospace;
+    border: solid 1px #1BA94C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HackerRankbutton{
+    color:white;
+    background-color: #1BA94C;
+    padding: 0.75rem;
+    border-radius: 3px;
+}
+.freecodecampIcon{
+    font-size:12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.freecodecampInfo {
+    color: #0b0f35;
+    font-size:2rem;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+.fcc-button{
+    color:white;
+    background-color: #0b0f35;
+    padding: 0.75rem;
+    border-radius: 3px;
+}
+.leetcodeicon{
+    color: #d4eb0a;
+    font-size:10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.leetcodeInfo{
+    color: #767e34;
+    font-size:2rem;
+    font-family: monospace;
+    border: solid 1px #d4eb0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leetcodebutton{
+    color:rgb(0, 0, 0);
+    background-color: #d4eb0a;
+    padding: 0.75rem;
+    border-radius: 3px;
+}
+
+
+.cgInfo{
+    font-size:2rem;
+    font-family: monospace;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-button{
+    color:rgb(0, 0, 0);
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 3px;
+}
+.footer{
+    background-color: #0b0f35;
+    color: #b1cee2;
+}
